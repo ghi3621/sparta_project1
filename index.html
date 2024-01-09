@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인과제1_구혜인</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- css flex나 grid를 쓰라던데.. -->
+    <!-- css 파일 따로 나중에 연습해보기. -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        .main {
+            -webkit-text-stroke: 1.3px black;
+            color: white;
+            text-align: center;
+            padding-bottom: 30px;
+
+        }
+
+        body {
+            background-image: url('https://img.extmovie.com/files/attach/images/135/777/906/072/82f7d2e59cc523602b3aabc31d3b1e7b.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .wrap {
+            background-image: url('https://mblogthumb-phinf.pstatic.net/MjAxNjEwMjhfOTkg/MDAxNDc3NTg2NDg0NTEz.VaxmTVoruKOM0-sKYZmSrnZpUXqAmuiUqCnmKYyaA8Ag.KgvH6Ui-tUOrwPObN1xkrS9cPdGoW3XbRMmfdmESdBkg.GIF.hanhyevin/b115253a-f586-4a69-8e5b-ee651529a047.gif?type=w800');
+            color: black;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+
+            background-size: cover;
+            background-position: left;
+            background-size: 130% 100%;
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+
+        .search {
+            font-size: 13.3px;
+            font-weight: 400;
+            margin-left: 20px;
+            min-width: 200px;
+            outline-color: gray;
+            outline-width: 5px;
+            outline-style: none;
+            padding-block-end: 5px;
+            padding-block-start: 5px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: start;
+        }
+    </style>
+    <script type="module" scr="./src/main.js"> </script>
+
+
+    <!-- 카드에 넣는 필수 4가지 요소  title(제목), overview(내용 요약)
+    , poster_path(포스터 이미지 경로), vote_average(평점) -->
+
+</head>
+
+<body>
+    <div class='wrap'>
+        <div class="main">
+            <h1>내배캠 최고 평점 영화 콜렉션</h1>
+        </div>
+        <p>영화 검색 :<input type="text" class='search' id='search-input' placeholder="영화 제목을 검색해 보세요"
+                aria-label="영화 제목을 검색해 보세요">
+            <button class="btn btn-outlisne-light me-2" >검색</button>
+        </p>
+    </div>
+    <ul id="card_list"></ul>
+</body>
+
+</html>
