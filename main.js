@@ -1,4 +1,4 @@
-const function topMovies async () => {
+async function topMovies() {
     const options = {
         method: 'GET',
         headers: {
