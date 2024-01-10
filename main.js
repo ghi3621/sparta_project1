@@ -1,4 +1,4 @@
-export const function topMovies async () => {
+const function topMovies async () => {
     const options = {
         method: 'GET',
         headers: {
